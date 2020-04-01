@@ -29,10 +29,7 @@ module.exports.security = {
 
   cors: {
     allRoutes: true,
-    allowOrigins: [
-      "http://localhost:3000",
-      "strawberry-pie-84465.herokuapp.com"
-    ]
+    allowOrigins: ["http://localhost:3000"]
     // allowCredentials: false,
   }
 
