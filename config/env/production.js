@@ -133,7 +133,10 @@ module.exports = {
      *                                                                          *
      ***************************************************************************/
     cors: {
-      allowOrigins: ["https://strawberry-pie-84465.herokuapp.com"]
+      allowOrigins: [
+        "https://strawberry-pie-84465.herokuapp.com",
+        "https://pumpkin-tart-12903.herokuapp.com/"
+      ]
     }
   },
 
@@ -223,7 +226,10 @@ module.exports = {
      * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
      *                                                                          *
      ***************************************************************************/
-    onlyAllowOrigins: ["https://strawberry-pie-84465.herokuapp.com"]
+    onlyAllowOrigins: [
+      "https://strawberry-pie-84465.herokuapp.com",
+      "https://pumpkin-tart-12903.herokuapp.com/"
+    ]
     /***************************************************************************
      *                                                                          *
      * If you are deploying a cluster of multiple servers and/or processes,     *
