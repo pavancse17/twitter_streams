@@ -223,10 +223,7 @@ module.exports = {
      * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
      *                                                                          *
      ***************************************************************************/
-    // onlyAllowOrigins: [
-    //   'https://example.com',
-    //   'https://staging.example.com',
-    // ],
+    onlyAllowOrigins: ["https://strawberry-pie-84465.herokuapp.com"]
     /***************************************************************************
      *                                                                          *
      * If you are deploying a cluster of multiple servers and/or processes,     *
@@ -270,7 +267,7 @@ module.exports = {
      * (the "max-age" to include in the "Cache-Control" response header)        *
      *                                                                          *
      ***************************************************************************/
-    cache: 365.25 * 24 * 60 * 60 * 1000 ,// One year
+    cache: 365.25 * 24 * 60 * 60 * 1000, // One year
 
     /***************************************************************************
      *                                                                          *
@@ -287,7 +284,7 @@ module.exports = {
      * (https://sailsjs.com/config/http)                                        *
      *                                                                          *
      ***************************************************************************/
-    trustProxy: true,
+    trustProxy: true
   },
 
   /**************************************************************************
