@@ -32,13 +32,19 @@ const stream = (socket, searchTerm) => {
 
 module.exports = {
   searchTweets: async function(req, res) {
+    if (!req.isSocket) {
+      return res.badRequest();
+    }
     let socket = req.socket;
     if (twitterStream) {
       twitterStream.destroy();
     }
     stream(socket, req.query["q"]);
     socket.on("connection", () => console.log("Client connected"));
-    socket.on("disconnect", () => console.log("Client disconnected"));
+    socket.on("disconnect", () => {
+      console.log("Client disconnected");
+      sails.io.removeAllListeners("tweets");
+    });
     return res.ok({ message: "tweets are successfully streaming at tweets" });
   }
 };
