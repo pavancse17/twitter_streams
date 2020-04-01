@@ -135,7 +135,7 @@ module.exports = {
     cors: {
       allowOrigins: [
         "https://strawberry-pie-84465.herokuapp.com",
-        "https://pumpkin-tart-12903.herokuapp.com/"
+        "https://pumpkin-tart-12903.herokuapp.com"
       ]
     }
   },
@@ -228,7 +228,7 @@ module.exports = {
      ***************************************************************************/
     onlyAllowOrigins: [
       "https://strawberry-pie-84465.herokuapp.com",
-      "https://pumpkin-tart-12903.herokuapp.com/"
+      "https://pumpkin-tart-12903.herokuapp.com"
     ]
     /***************************************************************************
      *                                                                          *
