@@ -133,7 +133,7 @@ module.exports = {
      *                                                                          *
      ***************************************************************************/
     cors: {
-      allowOrigins: ["strawberry-pie-84465.herokuapp.com"]
+      allowOrigins: ["https://strawberry-pie-84465.herokuapp.com"]
     }
   },
 
@@ -198,7 +198,7 @@ module.exports = {
      *                                                                          *
      ***************************************************************************/
     cookie: {
-      // secure: true,
+      secure: true,
       maxAge: 24 * 60 * 60 * 1000 // 24 hours
     }
   },
@@ -270,7 +270,7 @@ module.exports = {
      * (the "max-age" to include in the "Cache-Control" response header)        *
      *                                                                          *
      ***************************************************************************/
-    cache: 365.25 * 24 * 60 * 60 * 1000 // One year
+    cache: 365.25 * 24 * 60 * 60 * 1000 ,// One year
 
     /***************************************************************************
      *                                                                          *
@@ -287,7 +287,7 @@ module.exports = {
      * (https://sailsjs.com/config/http)                                        *
      *                                                                          *
      ***************************************************************************/
-    // trustProxy: true,
+    trustProxy: true,
   },
 
   /**************************************************************************
